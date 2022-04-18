@@ -37,6 +37,7 @@
             <!--  size만큼 모아서 db에 한방에 네트워크로 보내고 commit을 한다.  -->
             <property name="hibernate.jdbc.batch_size" value="10" />
             <property name="hibernate.hbm2ddl.auto" value="create" />
+            <property name="hibernate.default_batch_fetch_size" value="100"/>
         </properties>
     </persistence-unit>
 </persistence>
